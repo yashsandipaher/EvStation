@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_black"
+    tools:context=".userMainScreen">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottom_nav_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <com.mancj.materialsearchbar.MaterialSearchBar
+            style="@style/MaterialSearchBarLight"
+            app:mt_hint="Search a place"
+            android:layout_alignParentTop="true"
+            app:mt_maxSuggestionsCount="10"
+            app:mt_roundedSearchBarEnabled="true"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchBar"
+            app:mt_placeholder="Search a place"
+            android:elevation="5dp"
+            android:outlineProvider="bounds"
+            app:mt_searchBarColor="@color/white"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchBar"
+            android:layout_marginLeft="20dp"
+            android:scrollbars="none"
+            android:layout_marginRight="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nearby"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingTop="8dp"
+                    android:textSize="13dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 Star"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingTop="8dp"
+                    android:textSize="13dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingRight="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 Star"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingTop="8dp"
+                    android:textSize="13dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingRight="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 Star"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingTop="8dp"
+                    android:textSize="13dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingRight="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 Star"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingTop="8dp"
+                    android:textSize="13dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingRight="25dp"/>
+
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</FrameLayout>
