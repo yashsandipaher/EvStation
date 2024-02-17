@@ -18,7 +18,7 @@
         android:theme="@style/Theme.EvStation"
         tools:targetApi="31">
         <activity
-            android:name=".OwnerActivity"
+            android:name=".savingEnvironment"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,6 +26,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".reviewRating"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".OwnerActivity"
+            android:exported="false"></activity>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -37,21 +44,19 @@
             android:label="@string/title_activity_user_main" />
         <activity
             android:name=".userMainScreen"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".signup"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".login_activity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".Splash_screen"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
 
         <meta-data
             android:name="preloaded_fonts"
